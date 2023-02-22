@@ -9,16 +9,17 @@ const socket = require("socket.io");
 app.use(express.json());
 app.use(express.static("public"));
 
+//Checking For Connection
+app.route("/check").get((res,req)=>{
+  return res.json("Your App Is Running Successfully!!");
+})
+
 server.listen(port,"0.0.0.0", function (){
     console.log("server started");
     console.log(`Listening on port ${port}`);
     console.log(`http://localhost:${port}`);
 });
 
-//Checking For Connection
-app.route("/check").get((res,req)=>{
-  return res.json("Your App Is Running Successfully!!");
-})
 // Socket setup
 const io = socket(server);
 
