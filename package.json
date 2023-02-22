@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20",
+    "socket.io": "^2.5.0"
+  },
+  "name": "chat_server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "engines": {
+    "node": "v16.16.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
